@@ -1,0 +1,8 @@
+default:
+  - 'connect:server'
+  - 'watch'
+test:
+  - 'jshint'
+start:
+  - 'build'
+
