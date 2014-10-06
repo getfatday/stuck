@@ -3,7 +3,7 @@ module.exports = function (grunt, options) {
     server: {
       options: {
         hostname: '*',
-        port: '6789',
+        port: process.env.PORT || '6789',
         base: '.',
         middleware: [
           require('../index')
@@ -13,7 +13,7 @@ module.exports = function (grunt, options) {
     keepalive: {
       options: {
         hostname: '*',
-        port: '6789',
+        port: process.env.PORT || '6789',
         base: '.',
         keepalive: true,
         middleware: [
