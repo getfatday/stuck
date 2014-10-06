@@ -1,0 +1,150 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json stuck@1.0.0 No repository field.
+6 warn package.json stuck@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/ianderson/src/orbitz/stuck',
+8 verbose install   [ 'express',
+8 verbose install     'express-handlebars',
+8 verbose install     'gravatar',
+8 verbose install     'handlebars',
+8 verbose install     'flexie',
+8 verbose install     'almond',
+8 verbose install     'grunt',
+8 verbose install     'grunt-cli',
+8 verbose install     'grunt-contrib-connect',
+8 verbose install     'grunt-contrib-handlebars',
+8 verbose install     'grunt-contrib-jshint',
+8 verbose install     'grunt-contrib-less',
+8 verbose install     'grunt-contrib-requirejs',
+8 verbose install     'grunt-contrib-watch',
+8 verbose install     'load-grunt-config' ] ]
+9 info preinstall stuck@1.0.0
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping grunt-contrib-jshint@^0.10.0 /Users/ianderson/src/orbitz/stuck
+12 verbose already installed skipping grunt-contrib-less@^0.11.4 /Users/ianderson/src/orbitz/stuck
+13 verbose already installed skipping grunt-contrib-requirejs@^0.4.4 /Users/ianderson/src/orbitz/stuck
+14 verbose already installed skipping grunt-contrib-watch@^0.6.1 /Users/ianderson/src/orbitz/stuck
+15 verbose already installed skipping load-grunt-config@^0.13.1 /Users/ianderson/src/orbitz/stuck
+16 verbose already installed skipping express@^4.9.4 /Users/ianderson/src/orbitz/stuck
+17 verbose already installed skipping express-handlebars@^1.1.0 /Users/ianderson/src/orbitz/stuck
+18 verbose already installed skipping gravatar@^1.0.6 /Users/ianderson/src/orbitz/stuck
+19 verbose already installed skipping handlebars@~1.3.0 /Users/ianderson/src/orbitz/stuck
+20 verbose cache add [ 'flexie@git+https://github.com/doctyper/flexie', null ]
+21 verbose cache add spec="flexie@git+https://github.com/doctyper/flexie" args=["flexie@git+https://github.com/doctyper/flexie",null]
+22 verbose parsed spec { raw: 'flexie@git+https://github.com/doctyper/flexie',
+22 verbose parsed spec   scope: null,
+22 verbose parsed spec   name: 'flexie',
+22 verbose parsed spec   rawSpec: 'git+https://github.com/doctyper/flexie',
+22 verbose parsed spec   spec: 'https://github.com/doctyper/flexie',
+22 verbose parsed spec   type: 'git' }
+23 verbose parsed spec { raw: 'flexie@git+https://github.com/doctyper/flexie',
+23 verbose parsed spec   scope: null,
+23 verbose parsed spec   name: 'flexie',
+23 verbose parsed spec   rawSpec: 'git+https://github.com/doctyper/flexie',
+23 verbose parsed spec   spec: 'https://github.com/doctyper/flexie',
+23 verbose parsed spec   type: 'git' }
+24 verbose addRemoteGit u="https://github.com/doctyper/flexie" silent=false
+25 silly addRemoteGit parsed { protocol: 'https:',
+25 silly addRemoteGit   slashes: true,
+25 silly addRemoteGit   auth: null,
+25 silly addRemoteGit   host: 'github.com',
+25 silly addRemoteGit   port: null,
+25 silly addRemoteGit   hostname: 'github.com',
+25 silly addRemoteGit   hash: null,
+25 silly addRemoteGit   search: '',
+25 silly addRemoteGit   query: {},
+25 silly addRemoteGit   pathname: '/doctyper/flexie',
+25 silly addRemoteGit   path: '/doctyper/flexie',
+25 silly addRemoteGit   href: 'https://github.com/doctyper/flexie' }
+26 verbose already installed skipping almond@^0.3.0 /Users/ianderson/src/orbitz/stuck
+27 silly lockFile 4f5dcbc6-https-github-com-doctyper-flexie https://github.com/doctyper/flexie
+28 verbose lock https://github.com/doctyper/flexie /Users/ianderson/.npm/4f5dcbc6-https-github-com-doctyper-flexie.lock
+29 verbose addRemoteGit [ 'https://github.com/doctyper/flexie', 'master' ]
+30 verbose already installed skipping grunt@^0.4.5 /Users/ianderson/src/orbitz/stuck
+31 verbose already installed skipping grunt-cli@^0.1.13 /Users/ianderson/src/orbitz/stuck
+32 verbose already installed skipping grunt-contrib-connect@^0.7.1 /Users/ianderson/src/orbitz/stuck
+33 verbose already installed skipping grunt-contrib-handlebars@^0.8.0 /Users/ianderson/src/orbitz/stuck
+34 verbose git clone https://github.com/doctyper/flexie Cloning into bare repository '/Users/ianderson/.npm/_git-remotes/https-github-com-doctyper-flexie-4f5dcbc6'...
+35 verbose git fetch -a origin (https://github.com/doctyper/flexie)
+36 verbose git rev-list -n1 master ba0dd6a2f7a2ed4127090062cabb70dc2cd8b6b7
+37 verbose resolved git url git+https://github.com/doctyper/flexie#ba0dd6a2f7a2ed4127090062cabb70dc2cd8b6b7
+38 verbose tar unpack /var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz
+39 silly lockFile d6770e21-49023598805069923-tmp-tgz-unpack tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack
+40 verbose lock tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack /Users/ianderson/.npm/d6770e21-49023598805069923-tmp-tgz-unpack.lock
+41 silly lockFile 7a1b3dc9-9539-0-49023598805069923-tmp-tgz tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz
+42 verbose lock tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz /Users/ianderson/.npm/7a1b3dc9-9539-0-49023598805069923-tmp-tgz.lock
+43 verbose gentlyRm vacuuming /var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry
+46 silly gunzTarPerm modified mode [ '', 509, 493 ]
+47 silly gunzTarPerm extractEntry .gitignore
+48 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+51 silly gunzTarPerm extractEntry Rakefile
+52 silly gunzTarPerm modified mode [ 'Rakefile', 436, 420 ]
+53 silly gunzTarPerm extractEntry demo/
+54 silly gunzTarPerm modified mode [ 'demo/', 509, 493 ]
+55 silly gunzTarPerm extractEntry demo/css/
+56 silly gunzTarPerm modified mode [ 'demo/css/', 509, 493 ]
+57 silly gunzTarPerm extractEntry demo/css/box-flex.css
+58 silly gunzTarPerm modified mode [ 'demo/css/box-flex.css', 436, 420 ]
+59 silly gunzTarPerm extractEntry demo/index.html
+60 silly gunzTarPerm modified mode [ 'demo/index.html', 436, 420 ]
+61 silly gunzTarPerm extractEntry dist/
+62 silly gunzTarPerm modified mode [ 'dist/', 509, 493 ]
+63 silly gunzTarPerm extractEntry dist/flexie.min.js
+64 silly gunzTarPerm modified mode [ 'dist/flexie.min.js', 436, 420 ]
+65 silly gunzTarPerm extractEntry src/
+66 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+67 silly gunzTarPerm extractEntry src/flexie.js
+68 silly gunzTarPerm modified mode [ 'src/flexie.js', 509, 493 ]
+69 silly gunzTarPerm extractEntry test/
+70 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+71 silly gunzTarPerm extractEntry test/css/
+72 silly gunzTarPerm modified mode [ 'test/css/', 509, 493 ]
+73 silly gunzTarPerm extractEntry test/css/demo.css
+74 silly gunzTarPerm modified mode [ 'test/css/demo.css', 436, 420 ]
+75 silly gunzTarPerm extractEntry test/css/test.css
+76 silly gunzTarPerm modified mode [ 'test/css/test.css', 436, 420 ]
+77 silly gunzTarPerm extractEntry test/index.html
+78 silly gunzTarPerm modified mode [ 'test/index.html', 436, 420 ]
+79 silly gunzTarPerm extractEntry vendor/
+80 silly gunzTarPerm modified mode [ 'vendor/', 509, 493 ]
+81 silly gunzTarPerm extractEntry vendor/google-compiler/
+82 silly gunzTarPerm modified mode [ 'vendor/google-compiler/', 509, 493 ]
+83 silly gunzTarPerm extractEntry vendor/google-compiler/COPYING
+84 silly gunzTarPerm modified mode [ 'vendor/google-compiler/COPYING', 436, 420 ]
+85 silly gunzTarPerm extractEntry vendor/google-compiler/README
+86 silly gunzTarPerm modified mode [ 'vendor/google-compiler/README', 436, 420 ]
+87 silly gunzTarPerm extractEntry vendor/google-compiler/compiler.jar
+88 silly gunzTarPerm modified mode [ 'vendor/google-compiler/compiler.jar', 509, 493 ]
+89 silly gunzTarPerm extractEntry vendor/yuicompressor/
+90 silly gunzTarPerm modified mode [ 'vendor/yuicompressor/', 509, 493 ]
+91 silly gunzTarPerm extractEntry vendor/yuicompressor/README
+92 silly gunzTarPerm modified mode [ 'vendor/yuicompressor/README', 509, 493 ]
+93 silly gunzTarPerm extractEntry vendor/yuicompressor/yuicompressor-2.4.2.jar
+94 silly gunzTarPerm modified mode [ 'vendor/yuicompressor/yuicompressor-2.4.2.jar', 509, 493 ]
+95 silly lockFile d6770e21-49023598805069923-tmp-tgz-unpack tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack
+96 silly lockFile d6770e21-49023598805069923-tmp-tgz-unpack tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack
+97 silly lockFile 7a1b3dc9-9539-0-49023598805069923-tmp-tgz tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz
+98 silly lockFile 7a1b3dc9-9539-0-49023598805069923-tmp-tgz tar:///var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz
+99 silly lockFile 4f5dcbc6-https-github-com-doctyper-flexie https://github.com/doctyper/flexie
+100 silly lockFile 4f5dcbc6-https-github-com-doctyper-flexie https://github.com/doctyper/flexie
+101 verbose stack Error: ENOENT, open '/var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack/package.json'
+102 verbose cwd /Users/ianderson/src/orbitz/stuck
+103 error Darwin 13.2.0
+104 error argv "node" "/usr/local/bin/npm" "install"
+105 error node v0.10.32
+106 error npm  v2.0.0
+107 error path /var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack/package.json
+108 error code ENOENT
+109 error errno 34
+110 error ENOENT, open '/var/folders/9m/zlkfy5j16njb3bq0f_hvxp300000gq/T/npm-91475-9AiDGj-c/1412602659539-0.49023598805069923/tmp.tgz-unpack/package.json'
+111 error If you need help, you may report this error at:
+111 error     <http://github.com/npm/npm/issues>
+112 verbose exit [ 34, true ]

@@ -19,6 +19,13 @@ header {
   margin: 0 auto 1em auto;
 }
 
+p {
+  text-align: center;
+  a {
+    color: @foreground;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0.85em;
@@ -110,8 +117,16 @@ image {
   }
 }
 
-form {
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+}
+
+form {
+  .flex;
 
   input {
     display: inline-block;
@@ -125,6 +140,8 @@ form {
     color: @background;
     border: none;
     flex: 1;
+    -webkit-appearance: none;
+    border-radius: 0;
   }
 
   .edit & {
@@ -144,6 +161,7 @@ form {
     padding: 0;
     text-align: left;
     flex: 9;
+    width: 234px;
   }
 }
 

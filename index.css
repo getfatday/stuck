@@ -14,6 +14,12 @@ header,
 header {
   margin: 0 auto 1em auto;
 }
+p {
+  text-align: center;
+}
+p a {
+  color: #eeeeee;
+}
 ul {
   margin: 0;
   padding: 0.85em;
@@ -102,7 +108,18 @@ image {
   max-height: none;
   opacity: 1;
 }
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 form input {
@@ -116,6 +133,8 @@ form .submit {
   color: #555555;
   border: none;
   flex: 1;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 .edit form .input {
   border-bottom: 1px #eeeeee solid;
@@ -131,6 +150,7 @@ form .input {
   padding: 0;
   text-align: left;
   flex: 9;
+  width: 234px;
 }
 @media print {
   @page {
