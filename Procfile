@@ -1,1 +1,1 @@
-web: ./node_modules/grunt-cli/.bin/grunt connect:keepalive
+web: node app.js
