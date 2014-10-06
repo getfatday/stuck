@@ -1,0 +1,166 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body {
+  background: #555555;
+  color: #eeeeee;
+  font-family: sans-serif;
+}
+section,
+header,
+.stuck {
+  display: block;
+  margin: 0 auto;
+  width: 288px;
+}
+header {
+  margin: 0 auto 1em auto;
+}
+ul {
+  margin: 0;
+  padding: 0.85em;
+  text-align: right;
+  opacity: 1;
+}
+.edit ul {
+  opacity: 0;
+}
+li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+li a {
+  background: #ff4081;
+  color: #fff;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 0.25em;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+svg {
+  background: #fff;
+  display: block;
+  margin: -1.25em auto 1em auto;
+  box-sizing: border-box;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.002);
+  transition: all 0.5s;
+}
+.edit svg {
+  opacity: 0;
+}
+image {
+  clip-path: url(#circle);
+}
+.stuck {
+  background: #fff;
+  overflow: hidden;
+  padding-top: 0.25em;
+  position: relative;
+  transition: all 0.5s;
+}
+.stuck section {
+  position: absolute;
+  bottom: 0;
+}
+.edit .stuck {
+  opacity: 0;
+}
+.form {
+  background: #fff;
+  width: 100%;
+  padding: 0.25em;
+  box-sizing: border-box;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.002);
+  transition: all 0.5s;
+}
+.form h2,
+.form .icons,
+.form a {
+  opacity: 0;
+  font-size: 0;
+  transition: opacity 0.25s linear 0.5s, font-size 0.5s;
+}
+.edit .form h2 {
+  display: block;
+  font-size: 16px;
+}
+.edit .form .icons,
+.edit .form a {
+  display: inline-block;
+}
+.edit .form h2,
+.edit .form icons {
+  max-height: none;
+  opacity: 1;
+}
+form {
+  display: flex;
+}
+form input {
+  display: inline-block;
+  outline: none;
+  transition: all 0.5s;
+}
+form .submit {
+  opacity: 0;
+  background: #eeeeee;
+  color: #555555;
+  border: none;
+  flex: 1;
+}
+.edit form .input {
+  border-bottom: 1px #eeeeee solid;
+  vertical-align: bottom;
+  padding: 0.75em 0;
+}
+.edit form .submit {
+  opacity: 1;
+}
+form .input {
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: left;
+  flex: 9;
+}
+@media print {
+  @page {
+    size: 4in 6in;
+    margin: 0;
+    padding: 0;
+    width: 4in;
+    height: 6in;
+  }
+  svg,
+  body,
+  .stuck {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  section,
+  header {
+    display: none;
+  }
+  svg,
+  .stuck {
+    width: 4in;
+    height: 6in;
+    transition: none;
+    opacity: 1;
+  }
+  image {
+    clip-path: none;
+  }
+}

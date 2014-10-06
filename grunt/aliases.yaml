@@ -5,4 +5,5 @@ test:
   - 'jshint'
 start:
   - 'build'
-
+build:
+  - 'less'

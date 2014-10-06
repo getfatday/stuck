@@ -4,7 +4,10 @@ module.exports = function (grunt, options) {
       options: {
         hostname: '*',
         port: '6789',
-        base: '.'
+        base: '.',
+        middleware: [
+          require('../index')
+        ]
       }
     },
     keepalive: {
@@ -12,7 +15,10 @@ module.exports = function (grunt, options) {
         hostname: '*',
         port: '6789',
         base: '.',
-        keepalive: true
+        keepalive: true,
+        middleware: [
+          require('../index')
+        ]
       }
     }
 	};

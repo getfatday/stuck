@@ -1,0 +1,177 @@
+@background: #555;
+@foreground: #eee;
+@shadow: fade(#000, 0.2);
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body {
+  background: @background;
+  color: @foreground;
+  font-family: sans-serif;
+}
+section, header, .stuck {
+  display: block;
+  margin: 0 auto;
+  width: 288px;
+}
+
+header {
+  margin: 0 auto 1em auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0.85em;
+  text-align: right;
+  opacity: 1;
+  .edit & {
+    opacity: 0;
+  }
+}
+
+li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  a {
+    background: #ff4081;
+    color: #fff;
+    letter-spacing: 0.2em;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px 0 fade(#000, 50%);
+  }
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 0.25em;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+svg {
+  background: #fff;
+  display: block;
+  margin: -1.25em auto 1em auto;
+  box-sizing: border-box;
+  box-shadow: 0 8px 15px 0 @shadow;
+  transition: all 0.5s;
+  .edit & {
+    opacity: 0;
+  }
+}
+image {
+  clip-path: url(#circle);
+}
+.stuck {
+  background: #fff;
+  overflow: hidden;
+  padding-top: 0.25em;
+  position: relative;
+  transition: all 0.5s;
+  section {
+    position: absolute;
+    bottom: 0;
+  }
+  .edit & {
+    opacity: 0;
+  }
+}
+.form {
+  background: #fff;
+  width: 100%;
+  padding: 0.25em;
+  box-sizing: border-box;
+  box-shadow: 0 8px 15px 0 @shadow;
+  transition: all 0.5s;
+
+  h2, .icons, a {
+    opacity: 0;
+    font-size: 0;
+    transition: opacity 0.25s linear 0.5s, font-size 0.5s;
+  }
+
+  .edit & {
+    h2 {
+      display: block;
+      font-size: 16px;
+    }
+    .icons, a {
+      display: inline-block;
+    }
+    h2, icons {
+      max-height: none;
+      opacity: 1;
+    }
+  }
+}
+
+form {
+  display: flex;
+
+  input {
+    display: inline-block;
+    outline: none;
+    transition: all 0.5s;
+  }
+
+  .submit {
+    opacity: 0;
+    background: @foreground;
+    color: @background;
+    border: none;
+    flex: 1;
+  }
+
+  .edit & {
+    .input {
+      border-bottom: 1px @foreground solid;
+      vertical-align: bottom;
+      padding: 0.75em 0;
+    }
+    .submit {
+      opacity: 1;
+    }
+  }
+
+  .input {
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: left;
+    flex: 9;
+  }
+}
+
+@media print {
+  @page {
+    size: 4in 6in;
+    margin: 0;
+    padding: 0;
+    width: 4in;
+    height: 6in;
+  }
+  svg, body, .stuck {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  section, header {
+    display: none;
+  }
+  svg, .stuck {
+    width: 4in;
+    height: 6in;
+    transition: none;
+    opacity: 1;
+  }
+  image {
+    clip-path: none;
+  }
+}

@@ -22,6 +22,4 @@ app.get('/stuck/:id', function(req, res){
   .render('stuck', stuck({url: '/i/'+req.params.id+'.svg'}));
 });
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port %d', server.address().port);
-});
+module.exports = app;

@@ -4,7 +4,7 @@ module.exports = function (grunt, options) {
 			'Gruntfile.js',
 			'grunt/*',
 			'lib/**/*.js',
-      'templates/**/*.mustache',
+      'views/*.handlebars',
       '*.less',
       '*.html'
 		],
